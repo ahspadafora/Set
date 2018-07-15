@@ -8,31 +8,31 @@
 
 import Foundation
 
+enum CardNumber: Int {
+    case one
+    case two
+    case three
+}
+
+enum CardColor: Int {
+    case one
+    case two
+    case three
+}
+
+enum CardSymbol: Int {
+    case one
+    case two
+    case three
+}
+
+enum CardShading: Int {
+    case one
+    case two
+    case three
+}
+
 struct Card {
-    enum CardNumber: Int {
-        case one
-        case two
-        case three
-    }
-    
-    enum CardColor: String {
-        case red
-        case green
-        case purple
-    }
-    
-    enum CardSymbol: String {
-        case diamond
-        case squiggle
-        case oval
-    }
-    
-    enum CardShading: String {
-        case solid
-        case striped
-        case open
-    }
-    
     var number: CardNumber
     var color: CardColor
     var symbol: CardSymbol
